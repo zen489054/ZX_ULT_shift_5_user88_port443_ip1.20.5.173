@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_up_description">ਉੱਪਰ ਜਾਓ</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">ਮਿਟਾਓ</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="autofill">ਆਟੋਫਿਲ</string>
+    <string name="call_notification_answer_action">ਜਵਾਬ ਦਿਓ</string>
+    <string name="call_notification_answer_video_action">ਵੀਡੀਓ</string>
+    <string name="call_notification_decline_action">ਕਾਲ ਕੱਟੋ</string>
+    <string name="call_notification_hang_up_action">ਸਮਾਪਤ ਕਰੋ</string>
+    <string name="call_notification_incoming_text">ਇਨਕਮਿੰਗ ਕਾਲ</string>
+    <string name="call_notification_ongoing_text">ਜਾਰੀ ਕਾਲ</string>
+    <string name="call_notification_screening_text">ਇਨਕਮਿੰਗ ਕਾਲ ਦੀ ਸਕ੍ਰੀਨਿੰਗ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ</string>
+    <string name="copy_toast_msg">"ਲਿੰਕ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਹੋ ਗਿਆ"</string>
+    <string name="state_empty">ਖਾਲੀ</string>
+    <string name="state_off">ਬੰਦ ਹੈ</string>
+    <string name="state_on">ਚਾਲੂ ਹੈ</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="tooltip_description">ਟੂਲ-ਟਿੱਪ</string>
+    <string name="tooltip_label">ਟੂਲ-ਟਿੱਪ ਦਿਖਾਓ</string>
+</resources>

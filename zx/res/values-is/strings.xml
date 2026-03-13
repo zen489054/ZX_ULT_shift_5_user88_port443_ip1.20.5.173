@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_up_description">Fara upp</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">eyða</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Aðgerðarlykill+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">bilslá</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Valmynd+</string>
+    <string name="autofill">Sjálfvirk útfylling</string>
+    <string name="call_notification_answer_action">Svara</string>
+    <string name="call_notification_answer_video_action">Myndsímtal</string>
+    <string name="call_notification_decline_action">Hafna</string>
+    <string name="call_notification_hang_up_action">Leggja á</string>
+    <string name="call_notification_incoming_text">Símtal berst</string>
+    <string name="call_notification_ongoing_text">Símtal í gangi</string>
+    <string name="call_notification_screening_text">Síar símtal sem berst</string>
+    <string name="copy_toast_msg">Tengill afritaður á klippiborð</string>
+    <string name="state_empty">Autt</string>
+    <string name="state_off">Slökkt</string>
+    <string name="state_on">Kveikt</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="tooltip_description">ábending</string>
+    <string name="tooltip_label">sýna ábendingu</string>
+</resources>

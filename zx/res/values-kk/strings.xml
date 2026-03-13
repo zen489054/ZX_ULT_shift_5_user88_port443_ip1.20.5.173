@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_up_description">Жоғары қарай өту</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">бос орын</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="autofill">Автотолтыру</string>
+    <string name="call_notification_answer_action">Жауап беру</string>
+    <string name="call_notification_answer_video_action">Бейне</string>
+    <string name="call_notification_decline_action">Қабылдамау</string>
+    <string name="call_notification_hang_up_action">Тұтқаны қою</string>
+    <string name="call_notification_incoming_text">Кіріс қоңырау</string>
+    <string name="call_notification_ongoing_text">Қоңырау</string>
+    <string name="call_notification_screening_text">Келген қоңырауды сүзу</string>
+    <string name="copy_toast_msg">Сілтеме буферге көшірілді.</string>
+    <string name="state_empty">Бос</string>
+    <string name="state_off">Өшірулі</string>
+    <string name="state_on">Қосулы</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="tooltip_description">қалқыма көмек</string>
+    <string name="tooltip_label">қалқыма көмекті көрсету</string>
+</resources>

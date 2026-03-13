@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.isp.zproxy" platformBuildVersionCode="27" platformBuildVersionName="">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="tel"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.isp.zproxy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.isp.zproxy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="ZX Proxy " android:name="android.app.Application" android:testOnly="false">
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="true" android:hardwareAccelerated="true" android:label="ZX Proxy " android:launchMode="singleTop" android:name="com.isp.zproxy.MainActivity" android:taskAffinity="" android:theme="@style/LaunchTheme" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="io.flutter.embedding.android.NormalTheme" android:resource="@style/NormalTheme"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <provider android:authorities="com.isp.zproxy.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:exported="false" android:foregroundServiceType="systemExempted" android:name="com.example.sing_box.bg.VPNService" android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <provider android:authorities="com.isp.zproxy.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.begal.appclone.name" android:value="ZX Proxy "/>
+        <meta-data android:name="com.begal.appclone.originalName" android:value="ZX Proxy"/>
+        <meta-data android:name="com.begal.appclone.originalPackageName" android:value="Y29tLmlzcC5jbGlhcHA="/>
+        <meta-data android:name="com.begal.appclone.cloneSource" android:value="installed_app"/>
+        <meta-data android:name="com.begal.appclone.cloneTimestamp" android:value="\1772721851794"/>
+        <meta-data android:name="com.begal.appclone.cloneBuildSerial" android:value="2c95b67bde72a316"/>
+        <meta-data android:name="com.begal.appclone.cloneBuildManufacturer" android:value="Xiaomi"/>
+        <meta-data android:name="com.begal.appclone.cloneBuildModel" android:value="2201117SI"/>
+        <meta-data android:name="com.begal.appclone.clonePremiumVersion" android:value="true"/>
+        <meta-data android:name="com.begal.appclone.forceDeviceLock" android:value="false"/>
+        <meta-data android:name="com.begal.appclone.runtimeModdingOptions" android:value="true"/>
+        <meta-data android:name="com.begal.appclone.versionCode" android:value="10"/>
+        <meta-data android:name="com.begal.appclone.versionName" android:value="1.0.0"/>
+        <meta-data android:name="com.begal.appclone.appClonerVersionCode" android:value="2024050301"/>
+        <meta-data android:name="com.begal.appclone.appClonerVersionName" android:value="17.0.0-alpha"/>
+        <meta-data android:name="com.begal.appclone.appClonerClassesVersionCode" android:value="20190306"/>
+        <meta-data android:name="com.begal.appclone.originalSignatures" android:value="AQAAABwAAABhAG4AZAByAG8AaQBkAC4AYwBvAG4AdABlAG4AdAAuAHAAbQAuAFMAaQBnAG4AYQB0AHUAcgBlAAAAAADoAgAAMIIC5DCCAcwCAQEwDQYJKoZIhvcNAQELBQAwNzEWMBQGA1UEAwwNQW5kcm9pZCBEZWJ1ZzEQMA4GA1UECgwHQW5kcm9pZDELMAkGA1UEBhMCVVMwIBcNMjUxMjIwMTEwMTU5WhgPMjA1NTEyMTMxMTAxNTlaMDcxFjAUBgNVBAMMDUFuZHJvaWQgRGVidWcxEDAOBgNVBAoMB0FuZHJvaWQxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs4Zi+MII3T/XkFJ2ED/NqPRv8WCs2B4WJGAf8XnKQU0T4wbfUNuSMBU+vNffzYTrhcgnzBgJjq0UI6aWYj+de74zxolYTdXueeaoOcLk6ygJjFPgtue/NYt9C+us+nqmGA/M84q9Gv+Ur8arYuyvcXZ9lQFX5UIRFZ3j7ZIb1VwTeE7pai0kURFRARqbh2/EzjS8MIC/H9M43Au3YZgz1toS9fFtcoKYxIEWzlEFG8gGkzJbno/rWKGD3jTCLGfGVNTaC743sOOqGjzu6BUy5ucdtccfiGIewbHSQ1i0e/v/OMw5Krqym1q3JV56LoCaPwxCyNjhUqwoFU+cQoeWuwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBtW+09z8oAY1/sj+yTnAlLOel9TMtlC1lFd2kQchYGxi4/io1vYxMusP20rq90TSYvrH12lj+pA9C3iy3TauPyezwidtKfllCWfbodvaDi3xMD6n6TZeyq9E7nLJQ6J9D+FyxFvTjfVo85DrYiMWMZ/SGHsu00SJ7gmEEPXw87EkHH8c61HgBjcxrrIIlQ81aVOzSRvVXIUlInOXgG7RRx+1KMpFciCF32AJm6iquuHhJ2xC4YjHmKWbD4bIvEZNNQQeW5L+FQadWOAQ8wqgDpISIP9KFuKR/O2idKkd8mpOZPGyezgqaK5LS8zJRnxdPXyc3jNaTF3BezT/XRhcEw"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+        <provider android:authorities="com.isp.zproxy.com.begal.appclone.classes.DefaultProvider" android:exported="true" android:initOrder="2147483647" android:name="com.begal.appclone.classes.DefaultProvider"/>
+        <service android:exported="true" android:name="com.begal.appclone.service.RemoteService"/>
+        <receiver android:exported="true" android:name="com.begal.appclone.classes.DefaultProvider$DefaultReceiver"/>
+        <activity android:exported="true" android:name="com.begal.appclone.classes.DefaultProvider$MyActivity"/>
+        <receiver android:name="com.begal.appclone.classes.DisableClipboardAccess$ClearClipboardReceiver"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+</manifest>
